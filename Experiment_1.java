@@ -1,5 +1,4 @@
 class Invoice{
-        //Define instance variables here
         private String number;
         private String description;
         private int quantity;
@@ -7,14 +6,12 @@ class Invoice{
 
         public Invoice(String number ,String description , int quantity ,double price)
         {
-            //Define parameterized constructor here
             this.number = number;
             this.description = description;
             this.quantity=quantity;
             this.price= price;
          }
         
-       // Setters
         public void setNumber(String number){
              this.number = number;
         }
@@ -39,7 +36,7 @@ class Invoice{
             }
         }
 
-       // Getters
+      
         public String getNumber(){
             return number;
         }
@@ -76,8 +73,7 @@ class Invoice{
 
 public class Experiment_1{
          public static void main(String []args){
-                 
-                   //Write your code here 
+            
                    Invoice myInvoice;
                    myInvoice = new Invoice("2020","HELLO",5,90);
                    System.out.println("Total InvoiceAmount="+myInvoice.getInvoiceAmount());
