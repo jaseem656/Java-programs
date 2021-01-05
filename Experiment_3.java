@@ -2,7 +2,6 @@ class SavingsAccount {
     static double annualInterestRate = 0;
     private double savingsBalance;
     
-    // Constructor
     public SavingsAccount (double savingsBal)
     {
         savingsBalance = savingsBal;
@@ -28,13 +27,13 @@ public class Experiment_3{
     
         saver1.modifyInterestRate(0.04);
     
-        // new balances
+       
         System.out.println("Balance of saver1: " + saver1.calculateMonthlyInterest());
         System.out.println("Balance of saver2: " + saver2.calculateMonthlyInterest());
     
         saver1.modifyInterestRate(0.05);
     
-        // new balances
+        
         System.out.println("Balance of saver1: " + saver1.calculateMonthlyInterest());
         System.out.println("Balance of saver2: " + saver2.calculateMonthlyInterest());
     }
